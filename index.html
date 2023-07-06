@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Стартовый шаблон</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- slider  -->
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		
+	</head>
+	<body>
+		<svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+			<symbol id="bag">
+				<path d="M5.25468 10.5659C5.13958 9.11201 6.2884 7.86865 7.74689 7.86865H16.2531C17.7116 7.86865 18.8604 9.11201 18.7453 10.566L18.2203 17.1975C18.1174 18.4977 17.0323 19.5002 15.7281 19.5002H8.27189C6.96769 19.5002 5.88261 18.4977 5.77968 17.1975L5.25468 10.5659Z" stroke="#333333"/>
+				<path d="M7.99993 12.5C7.99993 12.5 7.78323 4 11.9999 4C16.2167 4 15.9999 12.5 15.9999 12.5" stroke="#333333"/>
+			</symbol>
+			<symbol id="favorite">
+				<path d="M11.9004 7.0948C10.7002 1.47892 1.40917 5.90389 5.76074 11.6018C10.1123 17.2996 12.4004 19.4908 12.4004 19.4908" stroke="#333333"/>
+				<path d="M11.8943 7.0948C13.0945 1.47892 22.7306 5.90389 18.379 11.6018C14.0275 17.2996 11.7002 19.5 11.7002 19.5" stroke="#333333"/>
+				<path d="M11.3911 6.70752L12.4044 6.70757L12.3835 7.24079H11.3911V6.70752Z" fill="#333333"/>
+			</symbol>
+			<symbol id="person">
+				<circle cx="12.4597" cy="8.18919" r="3.68919" stroke="#333333"/>
+				<path d="M4.5 19.3379H19.5" stroke="#333333"/>
+				<path d="M4.5 19.84C4.5 16.4347 8.84699 13.9134 12.2143 14.0023C15.4328 14.0872 19.5 16.4347 19.5 19.84" stroke="#333333"/>
+			</symbol>
+			<symbol id="closes">
+				<circle cx="10" cy="10" r="7" stroke="#333333"/>
+				<path d="M6 8C6.24928 8 8.75787 6.5 8.75787 6.5H10.0043H11.2507C11.2507 6.5 13.7507 8 14 8" stroke="#333333"/>
+				<path d="M6.01564 7.39283L6.01564 9.17806L7.76062 9.4756L7.76062 13.9386" stroke="#333333"/>
+				<path d="M13.9844 7.39283L13.9844 9.17806L12.2394 9.4756L12.248 13.9386" stroke="#333333"/>
+				<line x1="7.51147" y1="13.4385" x2="12.4971" y2="13.4385" stroke="#333333"/>
+				<path d="M8.50854 6.5C8.50854 6.5 9.00711 8.28522 10.0042 8.28522C11.0014 8.28522 11.4999 6.5 11.4999 6.5" stroke="#333333"/>
+			</symbol>
+			<symbol id="clock">
+				<circle cx="10" cy="10" r="7" fill="white" stroke="#333333"/>
+				<path d="M9.55444 5.5L9.55444 10.7061L13.4999 13" stroke="#333333"/>
+			</symbol>
+			<symbol id="pay">
+				<rect x="3.5" y="5.5" width="13" height="9" rx="0.5" stroke="#333333"/>
+				<rect x="4" y="8" width="12" height="2" fill="#333333"/>
+			</symbol>
+			<symbol id="favorite-btn">
+				<path d="M11.9004 7.0948C10.7002 1.47892 1.40917 5.90389 5.76074 11.6018C10.1123 17.2996 12.4004 19.4908 12.4004 19.4908" stroke="white"/>
+				<path d="M11.8943 7.0948C13.0945 1.47892 22.7306 5.90389 18.379 11.6018C14.0275 17.2996 11.7002 19.5 11.7002 19.5" stroke="white"/>
+				<path d="M11.3911 6.70752L12.4044 6.70757L12.3835 7.24079H11.3911V6.70752Z" fill="white"/>
+			</symbol>
+			<symbol id="arrow-right">
+				<path d="M8 5L16 12L8 18.5" stroke="#333333"/>
+			</symbol>
+			<symbol id="modal-close">
+				<path d="M10.0026 11.2822L5.50354 6.77901L1.0045 11.2822L0 10.2784L4.50611 5.78223L0 1.28608L1.0045 0.282227L5.50354 4.78544L10.0026 0.289296L11 1.28608L6.50096 5.78223L11 10.2784L10.0026 11.2822Z" fill="#303030"/>
+			</symbol>
+		</svg>
+
+		<header class="header">
+			<div class="container">
+				<nav class="nav">
+					<div class="nav__logo">
+						<a href="#!"><img src="./img/navigation/logo.png" alt="Логотип"></a>
+					</div>
+					<div class="nav__item">
+						<ul class="nav__item-list">
+							<li class="nav__list-item">
+								<a href="#!">
+									<svg class="nav__list-item-icon"><use href="#person"></use></svg>
+								</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#!">
+									<svg class="nav__list-item-icon"><use href="#favorite"></use></svg>
+								</a>
+							</li>
+							<li class="nav__list-item">
+								<a href="#!">
+									<svg class="nav__list-item-icon"><use href="#bag"></use></svg>
+								</a>
+							</li>
+						</ul>
+						<button class="mobile-nav-button">
+							<span class="mobile-nav-button__icon"></span>
+						</button>
+					</div>
+				</nav>
+				<nav class="mobile-nav">
+					<ul class="mobile-nav__list">
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="#!">постельное белье</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="#!">одежда для дома</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="#!">Одежда для улицы</a>
+						</li>
+						<li class="mobile-nav__item">
+							<a class="mobile-nav__link" href="#!">ВЫход</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main class="main">
+			<section class="section-slide">
+				<div class="container">
+					<div class="row">
+						<!-- Slider main wrapper -->
+						<div class="swiper-container-wrapper">
+							<!-- Slider main container -->
+							<div class="swiper-container gallery-top">
+							<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide swiper-slide--mod">
+										<a href="#!"><img class="swiper-slide__img" src="./img/content/slide1.png" alt="Фото 1"></a>
+									</div>
+									<div class="swiper-slide swiper-slide--mod">
+										<a href="#!"><img class="swiper-slide__img" src="./img/content/slide2.png" alt="Фото 2"></a>
+									</div>
+									<div class="swiper-slide swiper-slide--mod">
+										<a href="#!"><img class="swiper-slide__img" src="./img/content/slide3.png" alt="Фото 3"></a>
+									</div>
+									<div class="swiper-slide swiper-slide--mod">
+										<a href="#!"><img class="swiper-slide__img" src="./img/content/slide4.png" alt="Фото 4"></a>
+									</div>
+									<div class="swiper-slide swiper-slide--mod">
+										<a href="#!"><img class="swiper-slide__img" src="./img/content/slide5.png" alt="Фото 5"></a>
+									</div>
+									<div class="swiper-slide swiper-slide--mod">
+										<a href="#!"><img class="swiper-slide__img" src="./img/content/slide6.png" alt="Фото 6"></a>
+									</div>
+								</div>
+								<!-- Add Arrows -->
+								<!-- <div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div> -->
+							</div>
+							<!-- Slider thumbnail container -->
+							<div class="swiper-container gallery-thumbs">
+							<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide swiper-slide-hidden">
+										<a href="#!"><img src="./img/content/slide1.png" alt="Фото 2"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#!"><img src="./img/content/slide2.png" alt="Фото 2"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#!"><img src="./img/content/slide3.png" alt="Фото 2"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#!"><img src="./img/content/slide4.png" alt="Фото 2"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#!"><img src="./img/content/slide5.png" alt="Фото 2"></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#!"><img src="./img/content/slide6.png" alt="Фото 6"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<article class="card">
+							<div class="card__name-wrapper">
+								<h2 class="card__title">Пижама для девочек</h2>
+								<p class="card__article">Арт. 02765/46</p>
+								<div class="card__rating">Отзывы 
+									<span class="rating-star">
+										<img src="./img/content/row.png" alt="Рейтинг">
+									</span>14 отзывов
+									<a href="#!">
+										<svg class="raiting-icon"><use href="#arrow-right"></use></svg>
+									</a>
+								</div>
+							</div>
+							<div class="card__price-wrapper">
+								<div class="card__price">
+									<span class="card__price-new">800 ₽</span>
+									<span class="card__price-old">1 500 ₽</span>
+									<a href="#!">
+										<svg class="raiting-icon"><use href="#arrow-right"></use></svg>
+									</a>
+								</div>
+								<div class="card__discount">
+									<button class="card__discount-item">скидка -47%</button>
+									<button class="card__discount-item">акция -20%</button>
+								</div>
+							</div>
+							<form class="card__params-wrapper">
+								<div class="card__input-size">
+									<div class="select" tabindex="1">
+										<input class="selectopt select__item" name="test" type="radio" id="opt1" checked>
+										<label for="opt1" class="option">Выбрать размер</label>
+										<input class="selectopt select__item" name="test" type="radio" id="opt2">
+										<label for="opt2" class="option">40</label>
+										<input class="selectopt select__item" name="test" type="radio" id="opt3">
+										<label for="opt3" class="option">42</label>
+										<input class="selectopt select__item" name="test" type="radio" id="opt4">
+										<label for="opt4" class="option">46</label>
+										<input class="selectopt select__item" name="test" type="radio" id="opt5">
+										<label for="opt5" class="option">50</label>
+									</div>
+								</div>
+									<a class="card__input-size-link" href="#!">Определить размер</a>
+								<div class="card__counter">
+									<div class="counter-wrapper">
+										<button class="card__counter-item decrease">-</button>
+										<span class="card__counter-item count">1</span>
+										<button class="card__counter-item increase">+</button>
+									</div>
+									<div class="add-wrapper">
+										<button class="card__counter-add">Добавить в корзину</button>
+										<button class="card__counter-favorites">
+											<svg class="card__counter-favorites-icon"><use href="#favorite-btn"></use></svg>
+										</button>
+									</div>
+								</div>
+								<div class="card__counter-modal">
+									<a class="card__counter-modal-link" href="#!">Купить в 1 клик</a>
+								</div>
+							</form>
+							<div class="modal">
+								<form class="modal__form">
+									<button class="modal__close-btn">
+										<svg class="modal__close-btn-item"><use href="#modal-close"></use></svg>
+									</button>
+									<div class="modal__form-title">
+										<h2 class="modal__form-title-item title">Купить в 1 клик</h2>
+									</div>
+									<div class="modal__form-input">
+										<input class="modal__form-input-item" type="tel" placeholder="+ 7 (---) --- -- -- ">
+										<input class="modal__form-input-item" type="text" placeholder="Ваше имя">
+									</div>
+									<span class="under-line under-line--mod"></span>
+									<div class="modal__form-subtitle">
+										<p class="modal__form-subtitle-item">Нажимая кнопку “Отправить”, я даю согласие на обработку моих персональных данных в соответствии с 
+											<a class="modal__form-subtitle-link" href="#!">Условиями конфиденциальности</a>
+										</p>
+									</div>
+									<button class="modal__form-btn" type="submit">Отправить</button>
+								</form>
+							</div>
+							<span class="under-line"></span>
+							<div class="card__info">
+								<ul class="card__info-list">
+									<li class="card__info-item">
+										<svg class="card__info-icon"><use href="#closes"></use></svg>
+										<a class="card__info-link" href="#!">Описание товара</a>
+									</li>
+									<li class="card__info-item">
+										<svg class="card__info-icon"><use href="#clock"></use></svg>
+										<a class="card__info-link" href="#!">Доставка и возврат</a>
+									</li>
+									<li class="card__info-item">
+										<svg class="card__info-icon"><use href="#pay"></use></svg>
+										<a class="card__info-link" href="#!">Способы оплаты</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container footer-container">
+				<div class="footer__row row">
+					<div class="buyer">
+						<div class="buyer__title">
+							<h3 class="buyer__title-item title">покупателям</h3>
+						</div>
+						<ul class="buyer__list">
+							<li class="buyer__item">
+								<a class="buyer__link" href="#!">Каталог</a></li>
+							<li class="buyer__item">
+								<a class="buyer__link" href="#!">Акции</a>
+							</li>
+							<li class="buyer__item">
+								<a class="buyer__link" href="#!">Бренды</a>
+							</li>
+						</ul>
+					</div>
+					<div class="about">
+						<div class="about__title">
+							<h3 class="about__title-item title">о нас</h3>
+						</div>
+						<ul class="about__list">
+							<li class="about__item">
+								<a class="about__link" href="#!">О компании</a>
+							</li>
+							<li class="about__item">
+								<a class="about__link" href="#!">Новости</a>
+							</li>
+							<li class="about__item">
+								<a class="about__link" href="#!">Команда</a>
+							</li>
+						</ul>
+					</div>
+					<div class="subscribers">
+						<div class="subscribers__title">
+							<h3 class="subscribers__title-item title">Узнайте первыми о новинках и акциях</h3>
+						</div>
+						<form class="subscribers__form">
+								
+								<label class="subscribers__form-label" for="email">
+									<input class="subscribers__form-input" type="email" id="email" placeholder="Адрес электронной почты">
+								</label>
+							<button class="subscribers__form-button" type="submit">Подписаться</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

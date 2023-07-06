@@ -1,0 +1,166 @@
+.card {
+    padding-top: 20px;
+    padding-left: 40px;
+
+    /* Mobile XS */
+    @media (max-width:599px) {
+        padding-left: 10px;
+    }
+}
+
+.card__name-wrapper {
+    margin-bottom: 44px;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.card__article {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    color: $accent-color-hover;
+    margin-bottom: 18px;
+}
+.card__rating {
+    display: flex;
+    letter-spacing: 0.56px;
+}
+.rating-star {
+    margin-left: 12px;
+    margin-right: 4px;
+}
+
+.raiting-icon {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.card__price-wrapper {
+    margin-bottom: 28px;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-bottom: 12px;
+}
+.card__price-new {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+}
+.card__price-old {
+    line-height: 20px;
+    letter-spacing: 0.56px;
+    text-decoration: line-through;
+    color: $accent-color-hover;
+}
+
+.card__discount-item {
+    padding: 4px 8px;
+    border: 1px solid $accent-color;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+}
+
+.card__params-wrapper {
+    margin-bottom: 29px;
+}
+
+.card__input-size {
+    margin-bottom: 12px;
+}
+
+
+.card__input-size-link {
+    letter-spacing: 0.56px;
+    text-decoration-line: underline;
+    margin-bottom: 40px;
+}
+.card__counter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    /* Mobile XS */
+    @media (max-width:599px) {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+}
+
+.card__counter-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #F2F2F2;
+
+    border-right:1px solid #C4C4C4;
+}
+
+.counter-wrapper {
+    display: flex;
+    margin-right: 12px;
+}
+
+.add-wrapper {
+    display: flex;
+    column-gap: 4px;
+}
+
+.card__counter-add {
+    padding: 8px 28px;
+    border: 1px solid $accent-color;
+    background: $accent-color;
+    color: #fff;
+}
+
+.card__counter-favorites {
+    border: 1px solid $accent-color;
+    background: $accent-color;
+    padding: 10px;
+    color: #fff;
+
+}
+
+.card__counter-favorites-icon {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.card__counter-modal-link {
+    letter-spacing: 0.56px;
+    text-decoration-line: underline;
+}
+
+
+
+.card__info-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.card__info-item {
+   display: flex;
+}
+
+.card__info-icon {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.card__info-link {
+    letter-spacing: 0.56px;
+    text-decoration-line: underline;
+}
